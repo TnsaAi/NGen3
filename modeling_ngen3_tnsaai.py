@@ -22,8 +22,8 @@ import torch
 import torch.nn as nn
 import math
 
-from NGen3TransformerDecoder import TransformerDecoder
-from NGen3TransformerEncoder import TransformerEncoder
+from src.NGen3TransformerDecoder import TransformerDecoder
+from src.NGen3TransformerEncoder import TransformerEncoder
 
 class NGen3Model(nn.Module):
     """
@@ -686,7 +686,7 @@ import torch
 from torch.utils.data import DataLoader
 from transformers.optimization import AdamW, get_linear_schedule_with_warmup
 
-from NGen3Model import build_ngen3_model, config
+from src.NGen3Model import build_ngen3_model, config
 
 class NGen3TrainingLoop:
     """
