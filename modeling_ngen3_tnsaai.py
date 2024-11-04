@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#Copyright (c) 2024, Google's Tensorflow Development Team. All rights reserved.
+#Copyright (c) 2024, Meta's PyTorch Development Team. All rights reserved.
 
 #Before Commiting changes to this Model make sure you read NGen2 Community License.
 
@@ -22,8 +22,8 @@ import torch
 import torch.nn as nn
 import math
 
-from src.NGen3TransformerDecoder import TransformerDecoder
-from src.NGen3TransformerEncoder import TransformerEncoder
+from src.TNSA_Standard_Libv2.scripts.NGen3TransformerDecoder import TransformerDecoder
+from src.TNSA_Standard_Libv2.scripts.NGen3TransformerEncoder import TransformerEncoder
 
 class NGen3Model(nn.Module):
     """
@@ -686,7 +686,7 @@ import torch
 from torch.utils.data import DataLoader
 from transformers.optimization import AdamW, get_linear_schedule_with_warmup
 
-from src.NGen3Model import build_ngen3_model, config
+from src.TNSA_Standard_Libv2.scripts.NGen3Model import build_ngen3_model, config
 
 class NGen3TrainingLoop:
     """
